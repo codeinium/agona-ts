@@ -1,0 +1,15 @@
+import { typeAssert } from 'type-assertions';
+import { persons, filterPersons } from './index';
+typeAssert();
+const filtered1 = filterPersons(persons, 'user', {});
+typeAssert();
+const filtered2 = filterPersons(persons, 'user', { name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' });
+typeAssert();
+const filtered3 = filterPersons(persons, 'admin', {});
+typeAssert();
+const filtered4 = filterPersons(persons, 'admin', { name: 'Jane Doe', age: 32, role: 'Administrator' });
+typeAssert();
+typeAssert();
+typeAssert();
+typeAssert();
+typeAssert();
